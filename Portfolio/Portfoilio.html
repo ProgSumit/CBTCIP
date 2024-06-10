@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Kashniyal | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #343a40;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #profile-photo {
+            width: 200px; /* Increased width */
+            height: 200px; /* Increased height */
+            border-radius: 50%;
+            border: 4px solid #17a2b8; /* Changed border color */
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        #profile-photo:hover {
+            transform: scale(1.05); /* Slightly increased scale on hover */
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #17a2b8;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 30px;
+        }
+
+        hr {
+            border-color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .accordion-button {
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #17a2b8;
+        }
+
+        .accordion-item {
+            border: none;
+        }
+
+        .accordion-body {
+            background-color: #495057;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-secondary p-4 rounded-4">
+        <header>
+            <img src="/Portfoilio.jpg" alt="My Photo" id="profile-photo">
+            <h1>Sumit Kashniyal</h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sumit-kashniyal-745b94275/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ProgSumit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/SumitKashniyal/" target="_blank"><i class="fab fa-leetcode"></i></a>
+                <a href="https://drive.google.com/file/d/14LqfTNrE-b7GXRJZeCcbPs3zDlor5e-C/view?usp=drive_link" download="Divyanshu_Bhandari_Resume"><i class="fas fa-download"></i></a>
+            </div>
+        </header>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><strong>Email-id:</strong> sumitkashniyal@gmail.com</li>
+                    <li><strong>Mobile No.:</strong> 9528668226</li>
+                </ul>
+
+                <h2>Projects</h2>
+                <div class="accordion" id="projectsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Web Portal for Blood Donation (Guide: Prof. Sameer Rana, 13 May 2023)
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                Developed a user-friendly Blood Donation Portal, facilitating the connection between donors and recipients. Implemented features for donor registration, appointment scheduling, and donor center location search.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Hospital ERP System (Guide: Prof. Dr Vikrant, 14 Jan 2024)
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                The development of a comprehensive Hospital ERP Portal, optimizing administrative and clinical workflows. Engineered features for patient management, appointment scheduling, inventory control, and billing automation. Contributed to enhanced patient care and organizational effectiveness through innovative technology solutions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Todo App (Oct 2023 - Nov 2023)
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                Created a real-time Todo App using React, TailwindCSS, Node.js, Express, and MongoDB. This highlights proficiency in frontend-backend integration, responsive design, and database management.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Dictionary Web Application (Guide: Prof. Dr Vikrant, 25 April 2024)
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                Developed a dictionary web app using HTML, CSS, and JavaScript, integrating Wordnik API for real-time word definitions. Implemented a user-friendly interface allowing instant access to word meanings.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Spam Email Detection (Jan 2023 - Mar 2023)
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                Engineered a robust machine learning model for email security using Python. Effectively detected spam emails to mitigate phishing attacks. Achieved an impressive accuracy rate of 96.2%.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Movie Recommendation System (Guide: Prof. Ms Recha Gupta, 15 July 2023)
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#projectsAccordion">
+                            <div class="accordion-body">
+                                Created a movie recommendation system leveraging machine learning algorithms. Utilized collaborative filtering techniques to analyze user preferences and recommend movies tailored to individual tastes. Implemented user interfaces for inputting preferences and displaying recommended movies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="fixed-bottom bg-dark text-light text-center py-2">
+        &copy; 2023 Sumit Kashniyal | Portfolio
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
